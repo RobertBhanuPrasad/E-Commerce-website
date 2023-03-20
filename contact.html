@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<title>E-Commerce |Contact  Us
+</title>
+<link rel="stylesheet" type="text/css" href="bhanu.css">  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <nav class="nav nav_top">
+      <div class="logo">
+          <a href="bhanu.html"></a><img src="./logo.jpg" width="150">
+      </div>
+      <div class="nav_side">
+        <a href="about.html">about us</a>
+        <a href="service.html">services</a>
+        <a href="blog.html">Blogs</a>
+        <a href="contact.html">contact</a>
+        <a href="login.html">login</a>
+      </div>
+      </nav>
+      <div class="contact_container">
+          <h2>Contact Us</h2>
+          <div class="g_map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122103.71123629135!2d81.73631723532591!
+            3d16.987286738220906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a37a3f2440c9fff%3A0x86b24503e305ca21!
+            2sRajahmundry%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1642053339744!5m2!1sen!2sin" width="100%"
+             height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <div class="contact_content">
+              <p><b>Address:Rajahmundry,India</b></p>
+              <p><b>call:+91 7396922874</b></p>
+              <p><b>Mail:support@gmail.com</b></p>
+              
+          </div>
+      </div>
+      <div class="feed">
+        <h2>Write a review</h2>
+        <div class="feed_form">
+          <form name="submit-googlesheet" method="post">
+            <input type="text" name="Name" placeholder="Name"><br>
+            <input type="email" name="Email" placeholder="Email ID"><br>
+            <input type="number" name="Number" placeholder="contact Number"><br>
+           
+            <textarea rows="5" cols="7" name="Review" placeholder="write your review"></textarea><br>
+            <button type="submit">submit</button>
+          </form>
+        </div>
+      </div>
+<footer>
+<div class="footer_logo">
+<a href="#"><img src="./logo.jpg" width="150"></a>
+</div>
+<div class="pages">
+<h3>Pages</h3>
+<a href="about.html">About Us</a>|
+<a href="service.html">services</a>|
+<a href="blog.html">Blogs</a>|
+<a href="login.html">Login</a>|
+<a href="">Sign up</a>|
+</div>
+<div class="doc">
+<h3>Documents</h3>
+<a href="">privacy policy</a>|
+<a href="">Terms of use</a>|
+<a href="">Refund policy</a>
+</div>
+<div class="social">
+<h3>Follow us</h3>
+<a href="https://www.facebook.com/1Stopai-102490171820303" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
+<a href="https://www.linkedin.com/company/1stop-ai" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+<a href="https://www.instagram.com/1stop.ai/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+
+</div>
+<div class="contact">
+<h3>contact us</h3>
+<a href="https://api.whatsApp.com/send?phone= +917396922874" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+<a href="tell: +917396922874"><i class="fa fa-phone" aria-hidden="true"></i></a>
+<a href="mailto: support@1stop.ai"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+<a href=""></a>
+</div>
+<hr>
+<p>copy right &copy; 2022 1stop.All rights reserved </p>
+</footer>
+
+
+<script type="text/javascript">
+const scriptURL ='https://script.google.com/macros/s/AKfycbwoVsFDPAEQwfg4Dnt7ah9Y-BpSunTtXQl3iX7pyHCd8Knri7ghQ5qBA0q5grAxsK295w/exec'
+const form = document.forms['submit-googlesheet']
+
+form.addEventListener('submit', e => {
+e.preventDefault()
+fetch(scriptURL, {method: 'POST', body: new FormData(form)
+    })
+    .then(response => alert("Thanks you,will get back to you soon.."))
+    .catch(error => console.error('Error!', error.message))
+})
+</script>
+</body> 
+</html>
